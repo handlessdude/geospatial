@@ -50,7 +50,7 @@ public class AddWPSObjects : MonoBehaviour
             Vector3.zero,
             Quaternion.identity
         );
-        newAnchor.transform.localScale *= 1.2f;
+        // newAnchor.transform.localScale *= 1.1f;
         newAnchor.AddComponent<DiagonalRotation>();
         
         if (particleSystems.Count > 0)

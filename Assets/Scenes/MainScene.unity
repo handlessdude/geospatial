@@ -145,6 +145,7 @@ GameObject:
   - component: {fileID: 410087041}
   - component: {fileID: 410087040}
   - component: {fileID: 410087042}
+  - component: {fileID: 410087043}
   m_Layer: 0
   m_Name: Directional Light
   m_TagString: Untagged
@@ -252,6 +253,20 @@ MonoBehaviour:
   m_LightCookieSize: {x: 1, y: 1}
   m_LightCookieOffset: {x: 0, y: 0}
   m_SoftShadowQuality: 1
+--- !u!114 &410087043
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 410087039}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 174f86697c14d594b966d47ba96883a1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  ARCameraManager: {fileID: 2512387468973847747}
+  Light: {fileID: 0}
 --- !u!1 &1167446570
 GameObject:
   m_ObjectHideFlags: 0
@@ -910,7 +925,7 @@ Camera:
     width: 1
     height: 1
   near clip plane: 0.1
-  far clip plane: 5
+  far clip plane: 2
   field of view: 60
   orthographic: 0
   orthographic size: 5
@@ -952,7 +967,7 @@ MonoBehaviour:
   m_FocusMode: -1
   m_LightEstimationMode: -1
   m_AutoFocus: 1
-  m_LightEstimation: 0
+  m_LightEstimation: -1
   m_FacingDirection: 1
   m_RenderMode: 0
 --- !u!114 &2512387468973847772
@@ -1153,7 +1168,7 @@ MonoBehaviour:
   m_Camera: {fileID: 2512387468973847745}
   m_OriginBaseGameObject: {fileID: 2512387470422636669}
   m_CameraFloorOffsetObject: {fileID: 2512387470860572926}
-  m_RequestedTrackingOriginMode: 1
+  m_RequestedTrackingOriginMode: 0
   m_CameraYOffset: 0
 --- !u!114 &2512387470422636642
 MonoBehaviour:
@@ -1335,19 +1350,19 @@ PrefabInstance:
         type: 3}
       propertyPath: particleSystems.Array.data[0]
       value: 
-      objectReference: {fileID: 19800008, guid: a047a7f875b877d448082558019486ab,
+      objectReference: {fileID: 19800008, guid: c459dc8cf2a04624eb4d91f0b9ef9daa,
         type: 3}
     - target: {fileID: 875445143848780819, guid: f493ff72a9d5ba8469ec27b0e8a34d2d,
         type: 3}
       propertyPath: particleSystems.Array.data[1]
       value: 
-      objectReference: {fileID: 19800008, guid: c459dc8cf2a04624eb4d91f0b9ef9daa,
+      objectReference: {fileID: 19800010, guid: 7f5309b7257cf054a8fe0b18daa40cd8,
         type: 3}
     - target: {fileID: 875445143848780819, guid: f493ff72a9d5ba8469ec27b0e8a34d2d,
         type: 3}
       propertyPath: particleSystems.Array.data[2]
       value: 
-      objectReference: {fileID: 19800010, guid: 7f5309b7257cf054a8fe0b18daa40cd8,
+      objectReference: {fileID: 19800010, guid: d9751637d4fc2de40a234b45e10cb88d,
         type: 3}
     - target: {fileID: 875445143848780819, guid: f493ff72a9d5ba8469ec27b0e8a34d2d,
         type: 3}
